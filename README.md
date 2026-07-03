@@ -79,48 +79,8 @@ L'objectif est de proposer une expérience fluide aux trois acteurs clés de l'�
 
 La structure relationnelle garantit la traçabilité complète de chaque colis, de son expéditeur, de son livreur et des différentes étapes clés de son parcours logistique.
 
-```
-                      +-------------------+
-                      |       USER        |
-                      +-------------------+
-                      | PK  id            |
-                      |     name          |
-                      |     email (UQ)    |
-                      |     password_hash |
-                      |     role (ENUM)   |
-                      |     is_active     |
-                      |     created_at    |
-                      +-------------------+
-                        |               |
-         Créé par / Gère | 1             | 1  Assigné à
-                        |               |
-                        v 0..*          v 0..*
-+-------------------+ 0..* +-------------------+
-|      ADDRESS      |<-----+|     DELIVERY      |
-+-------------------+      +-------------------+
-| PK  id            |      | PK  id            |
-| FK  user_id (opt) |      | FK  client_id     |
-|     label         |      | FK  courier_id    |
-|     address_line  |      | FK  pickup_addr   |
-|     latitude      |      | FK  dropoff_addr  |
-|     longitude     |      |     status (ENUM) |
-|     is_frequent   |      |     created_at    |
-+-------------------+      |     updated_at    |
-         ^ 1               +-------------------+
-         |                           | 1
-         | Concerne                  |
-         |                           v 0..*
-         |                 +-------------------+
-         |                 | STATUS_LOG (AUDIT)|
-         |                 +-------------------+
-         +-----------------| PK  id            |
-                           | FK  delivery_id   |
-                           | FK  changed_by    |
-                           |     status (ENUM) |
-                           |     notes         |
-                           |     changed_at    |
-                           +-------------------+
-```
+<img width="1392" height="768" alt="uml_project" src="https://github.com/user-attachments/assets/a9177fa7-2426-4888-9bc5-f955275706e8" />
+
 
 ### Description Détaillée des Entités
 
