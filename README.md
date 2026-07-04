@@ -14,7 +14,7 @@ Ce document fait office de rapport technique et de guide de référence pour le 
 6. [Détails d'Implémentation du Client Web React](#-détails-dimplémentation-du-client-web-react)
 7. [Détails d'Implémentation du Service Spring Boot](#-détails-dimplémentation-du-service-spring-boot)
 8. [Guide d'Installation et Exécution](#-guide-dinstallation-et-exécution)
-
+9. [Démonstration vidéo]
 ---
 
 ## 📝 Présentation Générale
@@ -222,3 +222,12 @@ Le serveur Spring Boot démarrera par défaut sur le port configuré `8080`, pr�
 ### 📝 Synthèse de Conception
 
 Le projet **Campus Delivery** représente une synergie parfaite entre un frontend réactif, interactif et hautement esthétique (React, Tailwind CSS, Lucide Icons, SVG Canvas) et un écosystème backend robuste et sécurisé (Spring Boot, Spring Security JWT, JPA Hibernate). Sa modélisation relationnelle rigoureuse en fait une solution extensible, performante et prête pour le déploiement sur le cloud.
+
+
+🎬 Démonstration vidéo
+
+
+https://github.com/user-attachments/assets/5de3bba8-6b50-4edb-bf5e-6158306888ff
+
+
+
